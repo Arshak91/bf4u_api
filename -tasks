@@ -1,0 +1,69 @@
+order:
+- carrier
+- add Load (LTL, TL, Parcel, Other)
+- add feet
+- add weight
+
+customer:
+- add contact person 
+- add contact person position
+- add industry type
+- add email
+- remove rating 
+- add city country state
+- add last contacted day (easy updatable)
+- remove type individual
+
+
+
+mysql enum
+
+
+order
+- add type  (1.Unplaned Orders 2. Planned Orders 3. Demo morning ? 4. Demo Afternoon ?)
+
+- getdistance 10-ic aveli depqum mas mas ani
+
+
+sudo su
+
+systemctl restart bfapp
+systemctl status bfapp
+
+rm -rf ./bfapp/dist ./bfapp/app
+unzip dist.zip -d ./bfapp
+
+sudo ./bfupdateprev.sh
+
+
+
+
++ createdAt-@ helni bolor texeric
++ datetime-er@ erevan sirun
++- customers-i anun@ ereva bolor texerum
+- equipments (tractor, trailer)
+- orders status change to planned when planned
+- planning arandzin ej, vortex kereva planning info-n mek el unplanned orderner@
+- load edit
+
+
++ date-er@ linen aranc verji :00-i u AM PM -ov
++ load-um cost-@ -> rate
+- orders-um avelana palets
+//- orders status: [pending, confirmed, delivered]
+- loads status: [pending, confirmed, dispatched, delivered, freeze]
+- load-@ freeze status
+- orders pagination
+- orders-um mutq a arvum state-@, zip-code-@, city-n (u address ?)
+- plan aneluc nayi vor TL-@ arandzin load lini, LTL-i mej el xmbavori clasteringov
+- DAT rates
+- rate-@ lini 'rate per mile' u 'fuel ser charge'
+
+
+INSERT INTO `loads` 
+(   `id`,`nickname`,`orders`,`weight`,`feet`,`cost`,`carrierId`,`createdAt`,`updatedAt`) 
+VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+
+
+
+gK61er&

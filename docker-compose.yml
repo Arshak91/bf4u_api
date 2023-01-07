@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  bf4u_api:
+    image: bf4u_api
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
